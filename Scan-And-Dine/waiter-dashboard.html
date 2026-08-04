@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waiter Dashboard — Scan & Dine</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-nav="dashboard">
+
+  <div class="loader-overlay">
+    <div class="loader-mark">S&D</div>
+    <p>Opening kitchen queue…</p>
+  </div>
+
+  <div class="app-shell">
+    <div class="bg-blob b1"></div>
+    <div class="bg-blob b2"></div>
+
+    <header class="topbar">
+      <a href="index.html" class="icon-btn" aria-label="Back to home">←</a>
+      <div>
+        <div class="brand-name">Waiter Dashboard</div>
+      </div>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <div class="page-header">
+      <div class="crumb">Staff View</div>
+      <h1>🧑‍🍳 Incoming Orders</h1>
+      <p>Live orders from every table, straight from checkout.</p>
+    </div>
+
+    <div class="dash-stats">
+      <div class="stat-card card">
+        <div class="num" id="statPreparing">0</div>
+        <div class="lbl">Preparing</div>
+      </div>
+      <div class="stat-card card">
+        <div class="num" id="statReady">0</div>
+        <div class="lbl">Ready</div>
+      </div>
+      <div class="stat-card card">
+        <div class="num" id="statServed">0</div>
+        <div class="lbl">Served</div>
+      </div>
+    </div>
+
+    <div class="status-tabs">
+      <div class="status-tab active" data-tab="preparing">Preparing</div>
+      <div class="status-tab" data-tab="ready">Ready</div>
+      <div class="status-tab" data-tab="served">Completed</div>
+    </div>
+
+    <div id="ordersList"></div>
+
+    <footer class="app-footer">
+      <div class="f-logo">Scan & Dine</div>
+      <small>Waiter Dashboard · Updates automatically every few seconds</small>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

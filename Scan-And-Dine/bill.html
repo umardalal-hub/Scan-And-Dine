@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Bill — Scan & Dine</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-nav="cart">
+
+  <div class="loader-overlay">
+    <div class="loader-mark">S&D</div>
+    <p>Printing your receipt…</p>
+  </div>
+
+  <div class="app-shell">
+    <div class="bg-blob b1"></div>
+    <div class="bg-blob b2"></div>
+
+    <header class="topbar">
+      <a href="index.html" class="icon-btn" aria-label="Back to home">←</a>
+      <div class="brand-name">Your Bill</div>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <div id="receiptWrapper"></div>
+
+    <div id="billActions" class="action-row">
+      <button id="printBillBtn" class="btn btn-secondary btn-block">🖨️ Print</button>
+      <button id="downloadBillBtn" class="btn btn-primary btn-block">⬇️ Download PDF</button>
+    </div>
+
+    <div style="padding: 0 20px 10px; position:relative; z-index:1;">
+      <a href="index.html" class="btn btn-ghost btn-block">Back to Menu</a>
+    </div>
+
+    <footer class="app-footer">
+      <div class="f-logo">Scan & Dine</div>
+      <small>Made with ❤️ for a smarter dining experience · College Mini Project</small>
+    </footer>
+  </div>
+
+  <nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="nav-item" data-page="home"><span class="nav-ic">🏠</span>Home</a>
+      <a href="veg-category.html" class="nav-item" data-page="veg"><span class="nav-ic">🥦</span>Veg</a>
+      <a href="nonveg-category.html" class="nav-item" data-page="nonveg"><span class="nav-ic">🍗</span>Non-Veg</a>
+      <a href="drinks.html" class="nav-item" data-page="drinks"><span class="nav-ic">🥤</span>Drinks</a>
+      <a href="cart.html" class="nav-item" data-page="cart"><span class="nav-ic">🛒</span>Cart</a>
+    </div>
+  </nav>
+
+  <script src="js/app.js"></script>
+  <script src="js/bill.js"></script>
+</body>
+</html>

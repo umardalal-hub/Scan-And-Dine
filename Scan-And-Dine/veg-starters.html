@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veg Starters — Scan & Dine</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-nav="veg">
+
+  <div class="loader-overlay">
+    <div class="loader-mark">S&D</div>
+    <p>Plating up veg starters…</p>
+  </div>
+
+  <div class="app-shell">
+    <div class="bg-blob b1"></div>
+    <div class="bg-blob b2"></div>
+
+    <header class="topbar">
+      <a href="veg-category.html" class="icon-btn" aria-label="Back">←</a>
+      <div class="brand-name">Veg Starters</div>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <div class="page-header">
+      <div class="crumb">Table <span class="js-table-number">01</span> · Veg Menu</div>
+      <h1>🥗 Veg Starters</h1>
+      <p>Light bites and small plates to start your meal right.</p>
+    </div>
+
+    <div id="itemList" class="item-list"></div>
+
+    <footer class="app-footer">
+      <div class="f-logo">Scan & Dine</div>
+      <small>Made with ❤️ for a smarter dining experience · College Mini Project</small>
+    </footer>
+  </div>
+
+  <a href="cart.html" class="fab" aria-label="View cart">
+    🛒
+    <span class="fab-badge cart-count-badge" style="display:none;">0</span>
+  </a>
+
+  <nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="nav-item" data-page="home"><span class="nav-ic">🏠</span>Home</a>
+      <a href="veg-category.html" class="nav-item" data-page="veg"><span class="nav-ic">🥦</span>Veg</a>
+      <a href="nonveg-category.html" class="nav-item" data-page="nonveg"><span class="nav-ic">🍗</span>Non-Veg</a>
+      <a href="drinks.html" class="nav-item" data-page="drinks"><span class="nav-ic">🥤</span>Drinks</a>
+      <a href="cart.html" class="nav-item" data-page="cart"><span class="nav-ic">🛒</span>Cart</a>
+    </div>
+  </nav>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMenuItems('#itemList', 'vegStarters');
+    });
+  </script>
+</body>
+</html>

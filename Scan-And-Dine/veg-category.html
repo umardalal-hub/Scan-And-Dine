@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veg Menu — Scan & Dine</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-nav="veg">
+
+  <div class="loader-overlay">
+    <div class="loader-mark">S&D</div>
+    <p>Loading veg menu…</p>
+  </div>
+
+  <div class="app-shell">
+    <div class="bg-blob b1"></div>
+    <div class="bg-blob b2"></div>
+
+    <header class="topbar">
+      <a href="index.html" class="icon-btn" aria-label="Back to home">←</a>
+      <div class="brand-name">Veg Menu</div>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <div class="page-header">
+      <div class="crumb">Table <span class="js-table-number">01</span></div>
+      <h1>Pure Veg 🥦</h1>
+      <p>Fresh, wholesome and full of flavour — pick a category to begin.</p>
+    </div>
+
+    <section class="menu-grid">
+      <a href="veg-starters.html" class="menu-tile card veg wide fade-up">
+        <div class="tile-icon">🥗</div>
+        <div>
+          <h3>Veg Starters</h3>
+          <span class="count">Small plates to kick things off</span>
+        </div>
+      </a>
+      <a href="veg-main-course.html" class="menu-tile card veg wide fade-up">
+        <div class="tile-icon">🍛</div>
+        <div>
+          <h3>Veg Main Course</h3>
+          <span class="count">Curries, breads & rice</span>
+        </div>
+      </a>
+      <a href="desserts.html" class="menu-tile card veg wide fade-up">
+        <div class="tile-icon">🍰</div>
+        <div>
+          <h3>Desserts</h3>
+          <span class="count">A sweet way to finish</span>
+        </div>
+      </a>
+    </section>
+
+    <footer class="app-footer">
+      <div class="f-logo">Scan & Dine</div>
+      <small>Made with ❤️ for a smarter dining experience · College Mini Project</small>
+    </footer>
+  </div>
+
+  <a href="cart.html" class="fab" aria-label="View cart">
+    🛒
+    <span class="fab-badge cart-count-badge" style="display:none;">0</span>
+  </a>
+
+  <nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="nav-item" data-page="home"><span class="nav-ic">🏠</span>Home</a>
+      <a href="veg-category.html" class="nav-item" data-page="veg"><span class="nav-ic">🥦</span>Veg</a>
+      <a href="nonveg-category.html" class="nav-item" data-page="nonveg"><span class="nav-ic">🍗</span>Non-Veg</a>
+      <a href="drinks.html" class="nav-item" data-page="drinks"><span class="nav-ic">🥤</span>Drinks</a>
+      <a href="cart.html" class="nav-item" data-page="cart"><span class="nav-ic">🛒</span>Cart</a>
+    </div>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
